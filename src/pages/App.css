@@ -10,45 +10,72 @@
 }
 
 * {
-  margin: 0;
   border: 0;
   box-sizing: border-box;
   font-family: var(--font-QwitcherGrypen);
 }
 
 body {
-  background: #212426;
+  background: #212629;
 }
 
 #app {
   padding: 4em;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   flex-direction: column;
 }
 
-.logo {
-  max-width: 100%;
-  overflow: hidden;
+.link {
+  width: 174px;
+  height: 45px;
+  flex-shrink: 0;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo img {
-  width: 70%;
+  width: 20em;
   height: auto;
-  display: block;
-  margin: auto;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.linkMenu ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  font-size: 20px;
+  list-style: none;
+}
+
+.linkMenu ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.linkMenu ul li a:hover {
+  color: #00a3ff;
 }
 
 .search {
-  width: 70%;
-  margin: 4rem 0 2rem;
+  width: 40%;
+  /* margin: 0; */
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1.5rem 1.75rem;
-  border-radius: 4rem;
-  background: #1f2123;
+  padding: 0.1rem 0.6rem;
+  border-radius: 3rem;
+  background: #64697a;
   box-shadow: 5px 5px 7px #1c1d1f -5px -5px -7px #222527;
   -webkit-box-shadow: 5px 5px 7px #1c1d1f -5px -5px -7px #222527;
 }
@@ -59,15 +86,14 @@ body {
   padding-right: 1rem;
   outline: none;
   color: #a1a1a1;
-  background-color: #1f2123;
-  font-size: 1.5rem;
+  background-color: #64697a;
+  font-size: 1.6rem;
   font-weight: 500;
 }
 
-.search img {
-  width: 35px;
-  height: 35px;
+.search ion-icon {
   cursor: pointer;
+  color: #fff;
 }
 
 .empty {
@@ -79,14 +105,31 @@ body {
 
   color: #f9d3b4;
 }
-
+.h1tprt {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+}
+.ow {
+  display: flex;
+}
 .container {
   width: 100%;
-  margin-top: 3rem;
+  margin-top: 0rem;
+  overflow-x: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.container::-webkit-scrollbar{
+  display: none;
+}
+
+#footerMaster {
+  background: #484848;
 }
 
 @media screen and (max-width: 600px) {

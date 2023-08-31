@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import styles from "./movieDescription.module.css";
-import devFlix from "/favicon.png";
+import devflix from "/favicon.png";
 
 const MovieDesc = ({ movies, click }) => {
   const apikey = "676ed46e";
@@ -29,17 +29,13 @@ const MovieDesc = ({ movies, click }) => {
           </button>
           <div className={styles.movieType}>
             <div>
-              <img src={devFlix} alt="logo DEVFLIX" />
-              {movie.Type}
+              <img src={devflix} alt="logo DEVFLIX" /> {movie.Type}
               <h1>{movie.Title}</h1>
               <a
                 href={`https://google.com/search?q=${encodeURIComponent(
                   movie.Title
                 )}`}
-                target="_blank"
-              >
-                ▶️Assistir
-              </a>
+                target="_blank" > ▶️Assistir</a>
             </div>
           </div>
         </div>
