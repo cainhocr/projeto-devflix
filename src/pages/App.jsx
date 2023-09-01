@@ -40,7 +40,7 @@ const App = () => {
           <div className="linkMenu">
             <ul>
               <li>
-                <a href="#">inicio</a>
+                <a href="#">Inicio</a>
               </li>
               <li>
                 <a href="#">Filmes</a>
