@@ -119,7 +119,7 @@ body {
   margin-top: 0rem;
   overflow-x: auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
