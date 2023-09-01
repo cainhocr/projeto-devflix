@@ -12,7 +12,7 @@ const Footer = ({ children, link }) => {
   return (
     <footer>
       <p>
-        Feito com <ion-icon name="heart" /> por <a href={link}>{children}</a>
+        Feito com <ion-icon name="heart"/> por <a href={link}>{children}</a>
       </p>
         <SocialLinks icon={"logo-github"} href={"https://github.com"} />
         <SocialLinks icon={"logo-instagram"} href={"https://instagram.com/cr_cr_zn?"} />
